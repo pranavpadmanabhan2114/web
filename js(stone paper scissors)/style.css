@@ -1,0 +1,33 @@
+body{
+    background-color:#FCFF4B; 
+    
+    
+}
+
+.button{
+   
+     height:150px;
+    width: 150px; 
+    border-radius: 50%;
+    border: 10px solid #FED628;
+    margin:50px;
+    background-color: #7CAFC4;
+}
+
+
+.button-div{
+    text-align: center;
+} 
+
+
+.words{
+    color:rgb(128, 128, 128);
+    font-weight:bold;
+    text-align:center;
+    font-family : "geneva";
+    font-size: 30px;
+}
+
+.icon{
+    font-size:50px;
+}

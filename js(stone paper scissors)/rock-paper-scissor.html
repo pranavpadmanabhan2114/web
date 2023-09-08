@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rock-paper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class = "button-div">
+    <button class = "button" onclick=
+       "compare('rock');"> <i class="fa-solid fa-hand-back-fist fa-beat icon" style="color: #FFAD05;"></i> </button>
+
+
+    <button class = "button" onclick=
+     "compare('paper');"><i class="fa-solid fa-hand fa-beat icon" style="color: #FFAD05;"></i></button>
+
+
+    <button class = "button" onclick=
+    "compare('scissors');"><i class="fa-solid fa-hand-scissors fa-beat icon" style="color: #FFAD05;"></i></button>
+</div>
+
+    <p class = "playerMove words"></p>
+    <p class = "compMove words"></p>
+    <p class = 'result words'></p>
+    <p class = "score words"></p>
+
+<script>   
+
+
+let score = JSON.parse(localStorage.getItem('score'))|| {
+    wins : 0,
+    loss : 0,
+    tie : 0
+};
+
+function compare(playerMove){
+    let result;
+    console.log(`your move is ${playerMove}`)
+    let compMove=compSelect();
+    document.querySelector('.playerMove').innerHTML= `you chose ${playerMove}`;
+    
+    
+
+    if (playerMove == 'rock'){
+        if (compMove == 'rock'){
+            result = 'tie'
+        }
+
+
+        if (compMove == 'paper'){
+            result = 'lose'
+        } 
+        
+        
+        if (compMove == 'scissors'){
+            result = 'win'
+        }
+
+
+    }
+
+
+    if (playerMove == 'paper'){
+        if (compMove == 'rock'){
+            result = 'win'
+        }
+
+
+        if (compMove == 'paper'){
+            result = 'tie'
+        } 
+        
+        
+        if (compMove == 'scissors'){
+            result = 'lose'
+        }
+
+
+    }
+
+
+    if (playerMove == 'scissors'){
+        if (compMove == 'rock'){
+            result = 'lose'
+        }
+
+
+        if (compMove == 'paper'){
+            result = 'win'
+        } 
+        
+        
+        if (compMove == 'scissors'){
+            result = 'tie'
+        }
+
+    }
+
+    console.log(`result : you ${result}`);
+    document.querySelector('.result').innerHTML= `result: ${result}`;
+    
+   
+    calculateScore(result);    
+}
+    
+function compSelect(){
+    const select = Math.random();
+        
+    let compMove;
+       
+    if (select >=0 && select<1/3){
+        compMove='rock';
+
+    }
+    if (select >=1/3 && select<2/3){
+        compMove='paper';
+    }
+    if (select >=2/3 && select<1){
+        compMove='scissors';
+    }
+
+    console.log(`computer move is ${compMove}`);
+    document.querySelector('.compMove').innerHTML= `computer chose ${compMove}`;
+    
+    return compMove;
+}
+
+function calculateScore(result){
+   
+    if(result== 'win'){
+        score.wins+=1;
+    }
+    if(result== 'lose'){
+        score.lose+=1;
+    }
+    if(result== 'tie'){
+        score.tie+=1;
+    }
+    console.log(score);
+    document.querySelector('.score').innerHTML=`wins: ${score.wins} loses: ${score.lose} ties: ${score.tie}`
+    localStorage.setItem('score',JSON.stringify(score));
+
+}
+
+</script>
+</body>
+</html>

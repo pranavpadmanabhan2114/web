@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>amazon clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href ="style.css">
+</head>
+<body>
+<header>
+        <div class= "navbar">
+           <div class="logo border">
+                <!-- box1 -->
+           </div>
+
+
+
+           <div class="nav-address border">
+               <!-- box2 -->
+               <p id="address1">Deliver to</p>
+               <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p id="address2">India</p>
+               </div>
+
+            </div>
+
+
+
+            <div class="navsearch">
+                <!-- box3 -->
+                <select id="select-search"><option value="all">all</option></select>
+                <input type="text" placeholder="search amazon" id="search-input">
+               <a href= "/animation.html"><div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                </div></a> 
+                
+            </div>
+
+
+            <!-- box4 -->
+             <div class="language border">
+            <select id="lang">
+                <option value="EN">EN</option>
+            </select>
+            </div>
+
+
+            <!-- box5 -->
+            <div class="signin border">
+                <p id ="hello">Hello, sign in</p>
+                <select id="acc">
+                        <option value="acc">Accounts & Lists</option>
+                    </select>
+            </div>
+
+
+            <!-- box6 -->
+            <div class="returns border" >
+                    <p id="returns">Returns</p>
+                    <P id ="orders">& orders</P>
+            </div>
+
+            <!-- box7 -->
+
+            <div class="cart border">
+                <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <p>Cart</p>
+            </div>
+
+        </div>
+
+
+        <!-- panel -->
+
+    <div class="panel">
+
+                <!-- box1 -->
+         <div class="all border">
+            <div class="menu"><i class="fa-solid fa-bars"></i></div>
+            <p id="all">All</p>
+        </div>
+                <!-- box2 -->
+        <div class="deals">
+            <div class="box border">
+                Today's Deals
+            </div>
+            <div class="box border">
+                Customer Service
+            </div>
+            <div class="box border">
+                Registry
+            </div>
+        </div>
+
+        <div class="deal border">
+            <p>Shop great deals now</p>
+            
+        </div>
+
+    </div>
+</header>
+
+
+<div class="hero">
+    <!-- <div class="mid-screen">
+    <p id ="mid-para">You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.</p> <a href="https://www.amazon.in/?ref=aisgw_intl_stripe_in" id="mid-link" >Click here to go to amazon.in</a>
+            
+    </div>
+     -->
+
+</div>
+
+<div class="shopping">
+    <div class="shopping-box" id="box1">
+        <h2>Health & Personal Care</h2>
+        <div class="health">
+            <a href="https://www.amazon.in/Health-Care/b?ie=UTF8&node=1374494031"><div id="health"></div></a>
+        </div>
+        <div class="shop-now">
+        <a class="shop-now" href="https://www.amazon.in/Health-Care/b?ie=UTF8&node=1374494031">shop now</a></div>
+    </div>
+
+
+
+    <div class="shopping-box"id="box2">
+        <h2>Electronics</h2>
+        <div class="electronics">
+            <a href="https://www.amazon.com/b?node=16225009011&pf_rd_r=W0JZVNAAM62TKT4XVQ1N&pf_rd_p=5232c45b-5929-4ff0-8eae-5f67afd5c3dc&pd_rd_r=09c319b8-82af-474e-8dd6-ef2b5f15a1bc&pd_rd_w=dUPk8&pd_rd_wg=ZKryH&ref_=pd_gw_unk"><div id="electronics-img"></div></a>
+        </div>
+        <div class="shop-now">
+        <a class="shop-now" href="https://www.amazon.com/b?node=16225009011&pf_rd_r=W0JZVNAAM62TKT4XVQ1N&pf_rd_p=5232c45b-5929-4ff0-8eae-5f67afd5c3dc&pd_rd_r=09c319b8-82af-474e-8dd6-ef2b5f15a1bc&pd_rd_w=dUPk8&pd_rd_wg=ZKryH&ref_=pd_gw_unk">shop now</a></div>
+    </div>
+
+
+
+
+    <div class="shopping-box"id="box3">
+        <h2>Beauty</h2>
+        <div class="beauty">
+            <a href="https://www.amazon.com/b/?node=16225006011&pf_rd_r=W0JZVNAAM62TKT4XVQ1N"><div id="beauty"></div></a>
+        </div>
+        <div class="shop-now">
+        <a class="shop-now" href= "https://www.amazon.com/b/?node=16225006011&pf_rd_r=W0JZVNAAM62TKT4XVQ1N">shop now</a></div>
+    </div>
+
+
+    <div class="shopping-box"id="box4">
+        <h2>Pet Supplies</h2>
+        <div class="pet">
+            <a href="https://www.amazon.com/s?k=pet+supplies&s=date-desc-rank&crid=3IF5TSVMY5YRB&pd_rd_r=91e0b30d-6982-4bf4-87b4-573e8506e31c&pd_rd_w=R1pmh&pd_rd_wg=OguhD&pf_rd_p=ab475c0d-7817-4703-9d6d-f003bf2156bf&pf_rd_r=W0JZVNAAM62TKT4XVQ1N&qid=1632868254&sprefix=pet+sup%2Caps%2C268&ref=pd_gw_unk"><div id="pet"></div></a>
+        </div>
+        <div class="shop-now">
+        <a class="shop-now" href= "https://www.amazon.com/s?k=pet+supplies&s=date-desc-rank&crid=3IF5TSVMY5YRB&pd_rd_r=91e0b30d-6982-4bf4-87b4-573e8506e31c&pd_rd_w=R1pmh&pd_rd_wg=OguhD&pf_rd_p=ab475c0d-7817-4703-9d6d-f003bf2156bf&pf_rd_r=W0JZVNAAM62TKT4XVQ1N&qid=1632868254&sprefix=pet+sup%2Caps%2C268&ref=pd_gw_unk">shop now</a></div>
+    </div>
+   
+   
+</div>
+
+<!-- footer -->
+
+
+<footer>
+<div class="back">
+    <p>Back to top</p>
+</div>
+
+<div class="lists">
+    <div class="list1">
+        <ul>
+            <p><b>Get to know us</b></p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+        </ul>
+    </div>
+    <div class="list1">
+        <ul>
+                <p><b>Make money with us</b></p>
+                <a>Careers</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+        </ul>
+    </div>
+    <div class="list1">
+                <ul>
+                    <p><b>Amazon payment prodiucts</b></p>
+                    <a>Careers</a>
+                    <a>Blog</a>
+                    <a>About Amazon</a>
+                    <a>Investor Relations</a>
+                    <a>Amazon Science</a>
+                    <a>About Amazon</a>
+                </ul>
+    </div>
+    <div class="list1">
+                <ul>
+                    <p><b>Help</b></p>
+                    <a>Careers</a>
+                    <a>Blog</a>
+                    <a>About Amazon</a>
+                    <a>Investor Relations</a>
+                    <a>Amazon Devices</a>
+                    <a>Investor Relations</a>
+                    <a>Amazon Devices</a>
+                </ul>
+    </div>
+</div>
+
+
+
+
+
+</footer>
+
+
+
+
+</body>
+</html>

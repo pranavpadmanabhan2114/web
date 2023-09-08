@@ -1,0 +1,399 @@
+/* sticky not working */
+*{
+    margin :0;
+    border : border-box;
+    font-family: arial;
+}
+body{
+    background-color:  #e2e7e6;;
+}
+
+.navbar {
+    height : 60px;
+    background-color : #0f1111;
+    color:white;
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* .navlogo{
+    height:50px;
+    width:100px; 
+
+}*/
+
+.logo {
+    background-image:url("amazon_logo.png");
+    background-size:cover;
+    height:50px;
+    width: 100px;
+
+}
+
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+
+    border: 1.5px solid white;
+}
+/* box2 */
+#address1 {
+    color:  #cccccc;
+    font-size : 0.85rem;
+    margin-left:15px;
+}
+
+#address2 {
+    font-size:rem;
+    margin-left:3px;
+}
+
+.add-icon{
+    display:flex;
+    align-items :center;
+} 
+/* box3 */
+
+.navsearch {
+    display:flex;
+    height:40px;
+    width:620px;
+    justify-content:space-between;
+    /* background-color: #cccccc */
+}
+
+
+#select-search{
+    border-top-left-radius :4px;
+    border-bottom-left-radius :4px;
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align:center; 
+    border:none;
+    border-right: 1px solid ;
+    
+}
+
+#search-input{
+    width:100%;
+    font-size:1rem;
+    border:none;
+    padding-left: 15px;
+}
+
+.search-icon{
+    width:50px;
+    height:40px;
+    display:flex;
+    align-items:center; 
+    justify-content: center; 
+    border-top-right-radius :4px;
+    border-bottom-right-radius :4px;
+    font-size:1.2rem;
+    /* border-color: #febd68;
+    border-style:solid; */
+    border:none; 
+    background-color: #febd68; 
+    color: rgba(0, 0, 0, 0.705);
+    } 
+
+    #returns{
+        font-size: 12px;
+        color:#ffffff;
+    }
+
+    #orders{
+        font-size: 16px;
+        color:#ffffff;
+        font-weight: 550;
+    }
+
+
+    .language{
+        height:50px;
+        width:45px;
+        padding: 0px 9px 5px 9px;
+        display:flex;
+        background-color:  #0f1111;
+    
+    }
+
+
+    #lang{
+        font-size: 14px;
+        background-color:  #0f1111;
+        color:#ffffff;
+        border: none;
+
+    }
+
+   .signin{
+
+        height:40px;
+        width:113px;
+        padding: 0px 9px 10px 9px;
+        border:none; 
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+
+   }
+
+   #hello{
+       font-size: 12px;
+       padding-left: 2px;
+       font-weight:
+   }
+
+   #acc{
+        height: 15px;
+        width: 125px;
+        border:none;
+        font-size:14px;
+        background-color:#0f1111;
+        color: #ffffff;
+        font-weight: 550;
+        
+
+   }
+    .cart{
+        display:flex;
+        height:39px;
+        width : 66px;
+        padding: 0px 15px 11px 9px;
+        border:none;
+        align-items: end;
+
+        
+    }
+
+    .cart-icon{
+        font-size:2rem;
+    
+    }
+
+    .cart p{
+        font-weight: 700;
+    }
+
+
+
+
+.panel{
+    display:flex;
+    height : 39px;
+    width : 100%;
+    border: none;
+    background-color: #222742;
+    color: #ffffff;
+    align-items: center;  
+    
+
+}
+
+.all{
+    display:flex;
+    height:23px;
+    width: 40px;
+    padding: 8px 9px 8px 9px;
+    align-items: center ;
+   
+}
+
+#all{
+    font-size: 14px;
+    padding-left: 5px;
+
+}
+
+.menu{
+    font-size:17px
+}
+
+.deals{
+    display:flex;
+    align-items: center ;
+    width:100%;
+}
+
+.box{
+    /* height:12px;
+    width: 85px; */
+    padding: 8px 9px 8px 9px;
+    margin: 5px 0px 6px 0px;
+    font-size: 14px; 
+    align-items: center ;
+}
+
+.deal{
+    font-size: 14px;
+    font-weight: 700;
+    width:160px;
+    /* height:100%; */
+    margin-right: 10px;
+    white-space: nowrap;
+    /* display:flex;
+    flex-direction: column;
+    align-content: center; */
+
+}
+
+/* main */
+
+.hero{
+    background-image: url("hero_image.jpg");
+    background-size: contain;
+    height:500px;
+    /* why height:100% not working */
+    display:flex;
+    align-items: center
+}
+
+/* #mid-para{
+    display:inline;
+}
+
+.mid-screen{
+    height:30px;
+    width:982px;
+    background-color:#f5f6f6;
+    font-size:14px;
+    text-align: center;
+    position: absolute;
+    top:330px; 
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+#mid-link{
+    text-decoration: none; */
+
+.shopping{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom:200px;
+    
+}
+    
+.shopping-box{
+    height:385px;
+    width:323px;
+    /* width:22%; */
+    padding: 20px 0px 15px 0px;
+    background-color:white;
+    /* display:flex; */
+    /* transition: color 0s ; */
+}
+
+#health{
+    /* width: 100%; */
+    height:303px;
+    background-image:url("health.jpg");
+    background-size: cover;
+    margin:10px 10px 10px 10px;
+
+}
+
+#electronics-img{
+    /* width: 90%; */
+    height:303px;
+    background-image:url("laptops.jpg");
+    background-size: cover;
+    margin:10px 10px 10px 10px;
+
+}
+
+#beauty{
+    /* width: 80%; */
+    height:303px;
+    background-image:url("beauty.jpg");
+    background-size: cover;
+    margin:10px 10px 10px 10px;
+}
+
+#pet{
+    /* width: 80%; */
+    height:303px;
+    background-image:url("pet supplies.jpg");
+    background-size: cover;
+    margin:10px 10px 10px 10px;
+}
+
+.shop-now{
+    margin: 20px 20px 20px 20px; 
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+h2{
+    position: relative;
+    left:10px;
+}
+
+.shop-now:hover{
+    
+    color:orange;
+    
+}
+
+.back{
+    font-size: 13px;
+    text-align :center;
+    height:19px;
+    padding:15px 0px 15px 0px;
+    background-color:#0b203a;
+    color:white;
+}
+
+ul a {
+    display: block;
+    margin-top: 10px;
+}
+
+.lists{
+    display :flex;
+    justify-content: space-evenly;
+    color:white;
+    background-color: #222742;
+    /* margin:0px 0px 10px 0px; */
+}
+
+.list1{
+    margin:20px 0px 20px 0px;
+    padding:none;
+}
+
+ul{
+    padding-left: 0px;
+}
+
+.animation{
+    height:657px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    height: 50px;
+    width:50px;
+    border: 7px solid rgb(170, 170, 170);
+    border-radius: 50%;
+    border-top:7px solid rgb(14, 14, 78);
+    animation: loader 1s ease-in-out 0s infinite normal; 
+}
+
+
+@keyframes loader{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
